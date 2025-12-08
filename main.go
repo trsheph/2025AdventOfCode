@@ -5,7 +5,18 @@ import (
 	"os"
 	"strconv"
 
+	"github.com/trsheph/2025AdventOfCode/pkg/dayeight"
+	"github.com/trsheph/2025AdventOfCode/pkg/dayeleven"
+	"github.com/trsheph/2025AdventOfCode/pkg/dayfive"
+	"github.com/trsheph/2025AdventOfCode/pkg/dayfour"
+	"github.com/trsheph/2025AdventOfCode/pkg/daynine"
 	"github.com/trsheph/2025AdventOfCode/pkg/dayone"
+	"github.com/trsheph/2025AdventOfCode/pkg/dayseven"
+	"github.com/trsheph/2025AdventOfCode/pkg/daysix"
+	"github.com/trsheph/2025AdventOfCode/pkg/dayten"
+	"github.com/trsheph/2025AdventOfCode/pkg/daythree"
+	"github.com/trsheph/2025AdventOfCode/pkg/daytwelve"
+	"github.com/trsheph/2025AdventOfCode/pkg/daytwo"
 )
 
 func main() {
@@ -36,5 +47,27 @@ func main() {
 	}
 	if inDay == 1 {
 		dayone.ProcDayOne(inFile, procDos)
+	} else if inDay == 2 {
+		daytwo.ProcDayTwo(inFile, procDos)
+	} else if inDay == 3 {
+		daythree.ProcDayThree(inFile, procDos)
+	} else if inDay == 4 {
+		dayfour.ProcDayFour(inFile, procDos)
+	} else if inDay == 5 {
+		dayfive.ProcDayFive(inFile, procDos)
+	} else if inDay == 6 {
+		daysix.ProcDaySix(inFile, procDos)
+	} else if inDay == 7 {
+		dayseven.ProcDaySeven(inFile, procDos)
+	} else if inDay == 8 {
+		dayeight.ProcDayEight(inFile, procDos)
+	} else if inDay == 9 {
+		daynine.ProcDayNine(inFile, procDos)
+	} else if inDay == 10 {
+		dayten.ProcDayTen(inFile, procDos)
+	} else if inDay == 11 {
+		dayeleven.ProcDayEleven(inFile, procDos)
+	} else if inDay == 12 {
+		daytwelve.ProcDayTwelve(inFile, procDos)
 	}
 }
