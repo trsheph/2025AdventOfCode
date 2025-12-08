@@ -1,2 +1,2 @@
-# AdventOfCode2025
-Advent of Code
+# 2025AdventOfCode
+Advent of Code 2025
