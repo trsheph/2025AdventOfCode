@@ -25,7 +25,7 @@ func main() {
 	inDay := 1
 	var procDos string
 	if len(os.Args) == 1 {
-		inFile = "DayOneTest.txt"
+		inFile = "inputs/one/test.txt"
 	} else if len(os.Args) == 2 {
 		inFile = string(os.Args[1])
 	} else if len(os.Args) == 3 {
@@ -46,9 +46,11 @@ func main() {
 		panic(err)
 	}
 	if inDay == 1 {
-		dayone.ProcDayOne(inFile, procDos)
+		fmt.Println(inFile)
+		dayone.ProcDayOne(inFile)
 	} else if inDay == 2 {
-		daytwo.ProcDayTwo(inFile, procDos)
+		fmt.Println(inFile)
+		daytwo.ProcDayTwo(inFile)
 	} else if inDay == 3 {
 		daythree.ProcDayThree(inFile, procDos)
 	} else if inDay == 4 {
